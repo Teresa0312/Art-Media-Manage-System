@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>西安工业大学艺术与传媒学院资源库</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="../static/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/infor.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/content.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default mynav">
+
+</nav>
+
+<div class="col-md-12 col-xs-12 top no-padding">
+	<div class="col-md-7 col-xs-7 no-padding">
+		<div class="top-h">
+				<div class="h-zh"><a class="top_a" href="../index.html">
+				<span class="font-style-l">
+				西安工业大学
+				</span>
+				<span class="font-style-b word-spac">
+				艺术与传媒学院 教学资源库
+				</span></a>
+				</div>
+				<div class="h-en">
+					<span class="font-style-T">
+					XI'AN TECHOLOGICAL UNIVERSITY &nbsp&nbsp
+					SCHOOL OF ART & MEDIA &nbsp&nbsp TEACHING RESOURCE DATABASE
+					</span>
+				</div>
+			</div>
+	</div>
+	<div class="col-md-1 col-xs-1 no-padding"></div>
+	<div class="col-md-4 col-xs-4 no-padding" style="padding-right: 1rem;">
+		  <form class="search">
+				<div class="input-group" style="width: 50%;float: left;margin-right: 10px">
+			    <input type="text" class="form-control" placeholder="Search for..." style="border:0;height: 2.1rem;font-size:1rem;">
+			    <span class="input-group-btn">
+			      <button class="btn btn-default" type="button" style="border:0;height:2.1rem;color:black;font-size:1rem;line-height: 1">
+			      	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			      </button>
+			    </span>
+			  </div>
+			  <a href="../user/login.html" class="nav_a">登录</a></li>
+				<a href="../user/register.html" class="nav_a">注册</a></li>   
+			</form>
+		      
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="col-md-12 col-xs-12 no-padding">
+		<div class="col-md-9 col-xs-9 piclocal">
+			<img src="../static/img/xatu.jpg">
+		</div>
+		<div class="col-md-3 col-xs-3 no-padding">
+			<div class="col-md-12 col-xs-12 no-padding information">
+				<ul class="list-group">
+				  <li href="#" class="list-group-item">
+				    <h4 class="list-group-item-heading" id="head"></h4>
+				    <ul class="infor-ul" id="inforul">
+	
+				    </ul>
+				  </li>
+				</ul>
+
+				<a href=""><button type="button" class="btn btn-info" style="width: 100%">下载</button></a>
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+
+<div class="col-md-12 col-xs-12 no-padding footer">
+	<div class="col-xs-3 col-md-3"></div>
+	<div class="col-md-6 col-xs-6">
+
+	<img src="../static/img/link.png" class="linkimg" style="float: left;margin-right: 2rem;">
+
+	<div class="col-md-8 links clearfix">
+		<span>友情链接</span><br>
+		<ul id="linksul">
+
+		</ul>
+	</div>
+	</div>
+
+</div>
+
+<div class="col-md-12 col-xl-12 rights clearfix">
+<p>ALL RIGHTS RESERVED.西安工业大学艺术与传媒学院 金花路北4号 710032</p>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/infor.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		getInfor();
+		//获取友情链接
+		getlinks();
+	})
+
+	var infor=[{
+		'id':1,
+		'src':"../static/img/xatu.jpg",
+		'name':'西安工业大学',
+		'auth':'西安工业大学',
+		'number':'16060101101',
+		'class':'16060101',
+		'time':'2017-03-12',
+		'desc':'西安工业大学简称”西安工大“，是中国西北地区唯一一所以兵工为特色，以工为主，理、文、经、管、法协调发展的教学研究型大学 ，原中华人民共和国兵器工业部直属的七所本科院校之一（“兵工七子”），是“十二五”期间陕西省重点建设的高水平教学研究型大学、陕西省人民政府与中国兵器工业集团、国家国防科技工业局共建高校、教育部“卓越工程师教育培养计划”试点高校、陕西省大学生创新能力培养综合改革试点学校。',
+	}];
+
+	function getInfor(){
+		$("#inforul").empty();
+		var txt=" ";
+		$.each(infor,function(index,obj){
+			txt+='<li>作者：'+obj.auth+'</li><li>学号：'+obj.number+'</li><li>班级：'
+			+obj.class+'</li><li>时间：'+obj.time+'</li><li>介绍：'+obj.desc+'</li>';
+		});
+		$("#inforul").append(txt);
+		$("#head").text(infor[0].name);
+		console.log(txt);
+	}
+
+
+	//友情链接json
+	var links=[
+		{'id':1,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':2,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':3,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':4,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':5,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':6,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':7,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':8,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':9,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':10,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+	];
+
+	//获取友情链接
+	function getlinks(){
+		var txt=" ";
+		$.each(links,function(index,obj){
+			txt+='<li><a href="'+obj.href+'">'+obj.name+'</a></li>'
+		});
+		$("#linksul").append(txt);
+	}
+
+</script>

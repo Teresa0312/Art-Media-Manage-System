@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>西安工业大学艺术与传媒学院资源库</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="../static/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/zTreeStyle/zTreeStyle.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/content.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/tree.css">
+</head>
+
+<body>
+<nav class="navbar navbar-default mynav">
+
+</nav>
+
+<div class="col-md-12 col-xs-12 top no-padding">
+	<div class="col-md-7 col-xs-7 no-padding">
+		<div class="top-h">
+				<div class="h-zh"><a class="top_a" href="../index.html">
+				<span class="font-style-l">
+				西安工业大学
+				</span>
+				<span class="font-style-b word-spac">
+				艺术与传媒学院 教学资源库
+				</span></a>
+				</div>
+				<div class="h-en">
+					<span class="font-style-T">
+					XI'AN TECHOLOGICAL UNIVERSITY &nbsp&nbsp
+					SCHOOL OF ART & MEDIA &nbsp&nbsp TEACHING RESOURCE DATABASE
+					</span>
+				</div>
+			</div>
+	</div>
+	<div class="col-md-1 col-xs-1 no-padding"></div>
+	<div class="col-md-4 col-xs-4 no-padding" style="padding-right: 1rem;">
+		  <form class="search">
+				<div class="input-group" style="width: 50%;float: left;margin-right: 10px">
+			    <input type="text" class="form-control" placeholder="Search for..." style="border:0;height: 2.1rem;font-size:1rem;">
+			    <span class="input-group-btn">
+			      <button class="btn btn-default" type="button" style="border:0;height:2.1rem;color:black;font-size:1rem;line-height: 1">
+			      	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+			      </button>
+			    </span>
+			  </div>
+			  <a href="user/login.html" class="nav_a">登录</a></li>
+				<a href="user/register.html" class="nav_a">注册</a></li>   
+			</form>
+		      
+	</div>
+</div>
+
+<div class="container-fluid">
+	<div class="col-md-2 col-xs-2 menu" id="menu" style="padding-right: 0.5rem;padding-left: 0;border-right:1px solid black">
+		<div class="col-md-12 col-xs-12 resource no-padding">
+			<span>课程教学资源</span>
+		</div>
+		<div class="col-md-12 col-xs-12 treeDemo" id="tree" >
+			
+		</div>
+
+	</div>
+	<div class="col-md-10 col-xs-10 no-padding" id="iframediv">
+		<iframe src="all.html" id="testIframe" name="testIframe" scrolling="no" onload="changeFrameHeight()" frameborder="0" style="width: 100%"></iframe>
+	</div>
+</div>
+
+
+<div class="col-md-12 col-xs-12 no-padding footer">
+	<div class="col-xs-3 col-md-3"></div>
+	<div class="col-md-6 col-xs-6">
+
+	<img src="../static/img/link.png" class="linkimg" style="float: left;margin-right: 2rem;">
+
+	<div class="col-md-8 links clearfix">
+		<span>友情链接</span><br>
+		<ul id="linksul">
+
+		</ul>
+	</div>
+	</div>
+
+</div>
+
+<div class="col-md-12 col-xl-12 rights clearfix">
+<p>ALL RIGHTS RESERVED.西安工业大学艺术与传媒学院 金花路北4号 710032</p>
+</div>
+
+
+</body>
+</html>
+<script type="text/javascript" src="../static/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery.ztree.core.js"></script>
+<script type="text/javascript" src="../static/js/content.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		//调整iframe大小
+		window.onresize=function(){  
+		     changeFrameHeight();  
+		}	
+
+		//获取分类 生成Ztree
+		getTree();
+
+		//获取友情链接
+		getlinks();
+
+	});
+
+	//调整iframe大小
+	function changeFrameHeight(){
+	    var ifm= document.getElementById("testIframe"); 
+	    ifm.height=document.body.scrollHeight;
+	}
+
+	//分类json
+	var zNodes =[
+		{id:1, pId:0, name:"视觉传达设计专业", open:true},
+		{id:101, pId:1, name:"包装设计", file:"all.html"},
+		{id:102, pId:1, name:"立体构成", file:"all.html"},
+		{id:103, pId:1, name:"产品设计", file:"all.html"},
+		{id:104, pId:1, name:"海报设计", file:"all.html"},
+		{id:105, pId:1, name:"字体设计", file:"all.html"},
+		{id:106, pId:1, name:"色彩构成", file:"all.html"},
+		{id:107, pId:1, name:"企业新摄视觉识别系统", file:"all.html"},
+
+		{id:2, pId:0, name:"视觉传达设计专业", open:true},
+		{id:201, pId:2, name:"包装设计", file:"all.html"},
+		{id:202, pId:2, name:"立体构成", file:"all.html"},
+		{id:203, pId:2, name:"产品设计", file:"all.html"},
+		{id:204, pId:2, name:"海报设计", file:"all.html"},
+		{id:205, pId:2, name:"字体设计", file:"all.html"},
+		{id:206, pId:2, name:"色彩构成", file:"all.html"},
+		{id:207, pId:2, name:"企业新摄视觉识别系统", file:"all.html"},
+
+
+		{id:3, pId:0, name:"视觉传达设计专业", open:true},
+		{id:301, pId:3, name:"包装设计", file:"all.html"},
+		{id:302, pId:3, name:"立体构成", file:"all.html"},
+		{id:303, pId:3, name:"产品设计", file:"all.html"},
+		{id:304, pId:3, name:"海报设计", file:"all.html"},
+		{id:305, pId:3, name:"字体设计", file:"all.html"},
+		{id:306, pId:3, name:"色彩构成", file:"all.html"},
+		{id:307, pId:3, name:"企业新摄视觉识别系统", file:"all.html"},
+	];
+
+	//生成Ztree
+	function getTree(){
+		var zTree;
+		var demoIframe;
+		
+		var setting = {
+			view: {
+				dblClickExpand: false,
+				showLine: true,
+				selectedMulti: false
+			},
+			data: {
+				simpleData: {
+					enable:true,
+					idKey: "id",
+					pIdKey: "pId",
+					rootPId: ""
+				}
+			},
+			callback: {
+				beforeClick: function(treeId, treeNode) {
+					var zTree = $.fn.zTree.getZTreeObj("tree");
+					if (treeNode.isParent) {
+						zTree.expandNode(treeNode);
+						 //alert(treeNode.pId + ", " + treeNode.name);
+						return false;
+					} else {
+						demoIframe.attr("src",treeNode.file);
+						// alert(treeNode.tId + ", " + treeNode.name);
+						return true;	
+					}
+				},
+			}
+		};
+
+		$(document).ready(function(){
+			var t = $("#tree");
+			t = $.fn.zTree.init(t, setting, zNodes);
+
+			demoIframe = $("#testIframe");
+			demoIframe.bind("load", loadReady);
+			var zTree = $.fn.zTree.getZTreeObj("tree");
+			zTree.selectNode(zTree.getNodeByParam("id", 101));
+
+		});
+
+		function loadReady() {
+			var bodyH = demoIframe.contents().find("body").get(0).scrollHeight,
+			htmlH = demoIframe.contents().find("html").get(0).scrollHeight,
+			maxH = Math.max(bodyH, htmlH), minH = Math.min(bodyH, htmlH),
+			h = demoIframe.height() >= maxH ? minH:maxH ;
+			if (h < 530) h = 530;
+			demoIframe.height(h);
+		}
+	}
+
+	//友情链接json
+	var links=[
+		{'id':1,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':2,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':3,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':4,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':5,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':6,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':7,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':8,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':9,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+		{'id':10,'name':'西安工业大学','href':'http://www.xatu.cn/'},
+	];
+
+	//获取友情链接
+	function getlinks(){
+		var txt=" ";
+		$.each(links,function(index,obj){
+			txt+='<li><a href="'+obj.href+'">'+obj.name+'</a></li>'
+		});
+		$("#linksul").append(txt);
+	}
+
+</script>

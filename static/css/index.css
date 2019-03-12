@@ -1,0 +1,263 @@
+body{
+	background: #F5F5F9;
+}
+
+.top_a{
+	color: #333333;
+}
+
+.top_a:hover,.top_a:focus{
+	color: #333333;
+	text-decoration: none;
+}
+
+.mynav{
+	background-color: #808081;
+    border: 0;
+    border-radius: 0;
+	min-height: 3.7rem !important;
+	padding-right: 0;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+}
+
+.input-group{
+	border-radius: 1.5rem;
+	overflow: hidden;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+   	font-size: 1.2rem !important;
+	color: #D6A10D !important;
+}
+
+.navbar-default .navbar-nav > li > a {
+	padding-top: 1.2rem;
+	font-size: 1.2rem !important;
+	color: #D6A10D !important;
+}
+
+.container-fluid{
+	margin-top: 6.6rem;
+	padding-left: 13%;
+	padding-right: 13%;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+.padding-l{
+	padding-left: 0.7rem;
+	padding-right: 0;
+}
+
+.margin-l{
+	margin-left: 0.7rem;
+	margin-right: 0;
+}
+
+.h-zh{
+	font-size: 2rem;
+	margin-top: 1.2rem;
+}
+
+.eyesight{
+	margin-top: 29.9rem;
+	height: 5rem;
+	background: rgba(0,0,0,.4);
+	font-size: 1.7rem;
+	font-family: 宋体;
+	letter-spacing: 0.2rem;
+	text-align: center;
+	padding-top: 1.2rem;
+}
+
+.h-en{
+	margin-top: 0.2rem;
+	margin-bottom: 1.4rem;
+}
+
+.te-re-db{
+	background: url("../img/top.png");
+	background-size: 100% 100%;
+	height: 7rem;
+}
+
+.top-h{
+	text-align: right;
+}
+
+.font-style-l{
+    font-weight: lighter;
+    font-family: 宋体 !important;
+}
+
+.font-style-b{
+	font-weight: bold;
+	font-family: 黑体;
+	padding-right: 1.4rem;
+}
+
+.font-style-T{
+	font-family: Times New Roman;
+	font-size: 0.9rem;
+	font-weight: 700;
+	padding-right: 1.4rem;
+}
+
+.word-spac{
+	word-spacing: 10px;
+}
+
+.item img{
+	width: 100%;
+	height: 46.6rem !important;
+}
+
+.show{
+	background: #DFDFE3;
+	margin-top: 0.5rem;
+	height: 2.9rem;
+	padding: 0.4rem 2.2rem;
+	margin-bottom: 0.8rem;
+}
+
+.show span{
+	font-size: 1.5rem;
+	padding: 0;
+}
+
+.design{
+	background: url('../img/1.png');
+	background-size: 100% 100%;
+	height: 34.8rem;
+}
+
+.thing{
+	margin-bottom: 0.7rem;
+}
+
+.thing img{
+	width: 100%;
+	height: 17rem;
+}
+
+.graduate{
+	margin-top: 3.5rem;
+	border: 1px solid #9C9C9F;
+	padding: 1.5rem;
+	height: 17rem;
+}
+
+.graduate div{
+	width: 20% !important;
+}
+
+.graduate div img{
+	height: 14rem;
+}
+
+.gra-thing{
+	background: url('../img/2017.png');
+	background-size: 100% 100%;
+	height: 14rem;
+}
+
+.gar_p{
+	color: white;
+	font-size: 2rem;
+	letter-spacing: 0.3rem;
+	padding-top: 9.5rem;
+	padding-left: 1rem;
+}
+
+.statment{	
+	margin-top: 3.5rem;
+	height: 13.8rem;
+	box-shadow:  3px 3px 5px #E3E3E6;
+	margin-bottom: 3.5rem;
+	font-size: 1.5rem;
+}
+
+.enter{
+	background: url('../img/things.png');
+	background-size: 100% 100%;
+	height: 100%;
+}
+
+.content{
+	float: right;
+	font-size: 1.2rem;
+	line-height: 2rem;
+	padding-top: 3rem;
+}
+
+.enterbtn{
+	width: 10rem;
+	height: 3rem;
+	background: transparent;
+	border: 1px solid black;
+	font-size: 1.5rem;
+	letter-spacing: 0.2rem;
+	margin-top: 1rem;
+}
+
+.showteach{
+	padding-top: 3.5rem;
+	padding-left: 5rem;
+	font-size: 2rem;
+}
+
+.click{
+	border: 1px solid #E3E3E6;
+	height: 100%;
+}
+
+.footer{
+	border-bottom: 0.7px solid white;	
+	background: #39393A;
+	padding-top: 8rem;
+}
+
+.linkimg{
+	width: 10.5rem;
+	height: 10.5rem;
+}
+
+.links{	
+	font-size: 1.5rem;
+	color: white;
+	height: 22rem;
+}
+
+.links ul{
+	color: white;
+	list-style: none;
+	padding: 0;
+}
+
+.links ul li{
+	margin: 0.5rem;
+	float: left;
+}
+
+.links ul li a{
+	color: white;	
+}
+
+.rights{
+	position: static;		
+	padding-top: 2rem;
+	background: #39393A;
+	color: white;
+}
+
+.rights p{
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 1.3rem;
+}

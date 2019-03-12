@@ -1,0 +1,147 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.top_a{
+	color: #333333;
+}
+
+.top_a:hover,.top_a:focus{
+	color: #333333;
+	text-decoration: none;
+}
+
+.mynav{
+	background-color: #808081;
+    border: 0;
+    border-radius: 0;
+	min-height: 1.4rem !important;
+}
+
+.nav_a{
+	padding-top: 0.5rem;
+    padding-bottom: 0;
+    padding-top: 1.2rem;
+	font-size: 1.2rem !important;
+	color: #D6A10D !important;
+	padding: 10px 5px;
+}
+
+.input-group{
+	border-radius: 1.5rem;
+	overflow: hidden;
+}
+.nav_a:hover, .nav_a:focus {
+   	font-size: 1.2rem !important;
+	color: #D6A10D !important;
+}
+
+.no-padding{
+	padding: 0;
+}
+
+.top{
+	background: url('../img/con-top.png');
+	background-size: 100% 100%;
+	padding-left: 5rem;
+	margin-top: -1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.search{
+	margin-top: 3.5rem;
+	float: left;
+}
+
+.h-zh{
+	font-size: 2rem;
+	margin-top: 1.4rem;
+}
+
+.h-en{
+	margin-top: 0.2rem;
+	margin-bottom: 1rem;
+}
+
+.te-re-db{
+	background: url("../img/top.png");
+	background-size: 100% 100%;
+	height: 7rem;
+}
+
+.top-h{
+	text-align: left;
+}
+
+.font-style-l{
+	font-size: 1.6rem;
+    font-weight: lighter;
+    font-family: 宋体 !important;
+}
+
+.font-style-b{
+	font-weight: bold;
+	font-family: 黑体;
+	padding-right: 1.4rem;
+}
+
+.font-style-T{
+	font-family: Times New Roman;
+	font-size: 0.9rem;
+	font-weight: 700;
+	padding-right: 1.4rem;
+}
+
+.resource{
+	background: #A4A4A7;
+	height: 2.7rem;
+	color: white;
+	font-size: 1.7rem;
+	padding: 0.2rem 0.8rem;
+	letter-spacing: 0.3rem;
+}
+.footer{
+	border-bottom: 0.7px solid white;	
+	background: #39393A;
+	padding-top: 8rem;
+}
+
+.linkimg{
+	width: 10.5rem;
+	height: 10.5rem;
+}
+
+.links{	
+	font-size: 1.5rem;
+	color: white;
+	height: 22rem;
+}
+
+.links ul{
+	color: white;
+	list-style: none;
+	padding: 0;
+}
+
+.links ul li{
+	margin: 0.5rem;
+	float: left;
+}
+
+.links ul li a{
+	color: white;	
+}
+
+.rights{
+	position: static;		
+	padding-top: 2rem;
+	background: #39393A;
+	color: white;
+}
+
+.rights p{
+	text-align: center;
+	margin-bottom: 2rem;
+	font-size: 1.3rem;
+}

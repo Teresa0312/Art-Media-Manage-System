@@ -1,0 +1,45 @@
+body{
+	background: #F5F5F9;
+	background: url('../img/xatu.jpg') no-repeat;
+	background-size: 100% 100%;
+}
+
+.main{
+	text-align: center;
+	padding-top: 5rem;
+	padding-bottom: 4rem;
+}
+
+.school{
+	font-size: 3.5rem;
+	/*font-family: 宋体;*/
+	letter-spacing: 0.3rem;
+}
+
+.art{
+	font-size: 3.7rem;
+	letter-spacing: 0.3rem;
+}
+
+h3{
+	margin: 15px;
+	/*font-family: 宋体;*/
+	text-align: center;
+}
+
+.login{
+	background: rgba(255,255,255,.4);
+	border-radius: 5%;
+}
+
+.form-group{
+	margin-bottom: 0;
+}
+
+.form-control{
+	border-radius: 0;
+	height: 4.5rem;
+}
+
+
+
